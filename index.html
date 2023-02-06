@@ -1,0 +1,36 @@
+<!doctype html>
+  <html>
+    <head>
+	  <title>object</title>
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+  <body>
+  <script>
+  //2.
+		   document.write("<br>");
+		   document.write("<br>");
+        document.write("2.using many array in one array changed in map method");
+        document.write("<br>");
+		document.write("<br>");
+
+        const user2 = [
+            {
+                first_name: 'Mike',
+                last_name: 'Sheridan'
+            },
+            {
+                first_name: 'Tim',
+                last_name: 'Lee'
+            },
+            {
+                first_name: 'John',
+                last_name: 'Carte'
+            }
+        ];
+		let secondQ = user2.map(function(second){
+		   return `"${second.last_name}"`
+		   });
+		   document.write(secondQ);
+	</script>
+</body>
+</html>
